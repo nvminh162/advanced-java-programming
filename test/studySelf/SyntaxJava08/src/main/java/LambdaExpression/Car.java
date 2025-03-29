@@ -1,4 +1,4 @@
-package LambdaExpressionNStreamAPI;
+package LambdaExpression;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,10 +1,10 @@
-package LambdaExpressionNStreamAPI;
+package LambdaExpression;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LambdaExpressionNStreamAPIAfter {
+public class LambdaExpressionAfter {
     /*Tìm xe có số km nhỏ hơn 50,000.*/
     public static List<Car> findCarsUsingFilter(List<Car> cars) {
         return cars

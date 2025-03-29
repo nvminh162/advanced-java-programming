@@ -1,8 +1,8 @@
-package LambdaExpressionNStreamAPI;
+package LambdaExpression;
 
 import java.util.List;
 
-import static LambdaExpressionNStreamAPI.LambdaExpressionNStreamAPIAfter.*;
+import static LambdaExpression.LambdaExpressionAfter.*;
 
 public class Main {
     public static void main(String[] args) {

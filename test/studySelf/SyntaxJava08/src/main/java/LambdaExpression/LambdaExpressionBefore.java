@@ -1,9 +1,9 @@
-package LambdaExpressionNStreamAPI;
+package LambdaExpression;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LambdaExpressionNStreamAPIBefore {
+public class LambdaExpressionBefore {
     public List<Car> findCarsOldWay(List<Car> cars) {
         List<Car> selectedCars = new ArrayList<>();
         for (Car car : cars) {
