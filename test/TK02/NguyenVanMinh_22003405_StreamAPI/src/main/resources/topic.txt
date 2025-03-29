@@ -1,0 +1,6 @@
+1. (0 điểm) Viết các lớp đối tượng tương ứng với các thuộc tính trong tệp dữ liệu json trên.
+2. (5 điểm) JSON-P (Jakarta JSON Processing):
+   Viết lớp, dùng Streaming API để đọc tài liệu Json cho trước để phân tích.
+   Viết phương thức lấy danh sách các diễn viên của phim nào đó khi biết mã số phim:
+   * listCast(String movieID): List<String>
+3. (5 điểm) Viết lớp, kiểm tra chức năng, ghi kết quả thực thi phương thức câu 2 vào file, tên file gồm: tên và mã số sinh viên.

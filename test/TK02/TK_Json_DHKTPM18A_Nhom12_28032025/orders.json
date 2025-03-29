@@ -1,0 +1,660 @@
+[
+    {
+        "order_id": "ORD001",
+        "customer": {
+            "customer_id": "CUS006",
+            "name": "Đặng Minh E",
+            "phone": "0956789012",
+            "address": {
+                "street": "23 Cách Mạng Tháng 8",
+                "ward": "Phường 10",
+                "district": "Quận 3"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "40",
+                "quantity": 1,
+                "unit_price": 600000
+            },
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "M",
+                "quantity": 2,
+                "unit_price": 280000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 11,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD002",
+        "customer": {
+            "customer_id": "CUS004",
+            "name": "Lê Hoàng C",
+            "phone": "0934567890",
+            "address": {
+                "street": "56 Lý Thường Kiệt",
+                "ward": "Phường 7",
+                "district": "Quận Tân Bình"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHI003",
+                "name": "Áo hoodie nữ",
+                "size": "M",
+                "quantity": 3,
+                "unit_price": 320000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 25,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD003",
+        "customer": {
+            "customer_id": "CUS004",
+            "name": "Lê Hoàng C",
+            "phone": "0934567890",
+            "address": {
+                "street": "56 Lý Thường Kiệt",
+                "ward": "Phường 7",
+                "district": "Quận Tân Bình"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "42",
+                "quantity": 1,
+                "unit_price": 600000
+            },
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "L",
+                "quantity": 1,
+                "unit_price": 280000
+            },
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "39",
+                "quantity": 2,
+                "unit_price": 600000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 27,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD004",
+        "customer": {
+            "customer_id": "CUS004",
+            "name": "Lê Hoàng C",
+            "phone": "0934567890",
+            "address": {
+                "street": "56 Lý Thường Kiệt",
+                "ward": "Phường 7",
+                "district": "Quận Tân Bình"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "40",
+                "quantity": 2,
+                "unit_price": 600000
+            },
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "42",
+                "quantity": 3,
+                "unit_price": 550000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 12,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD005",
+        "customer": {
+            "customer_id": "CUS003",
+            "name": "Trần Thị B",
+            "phone": "0923456789",
+            "address": {
+                "street": "78 Nguyễn Kiệm",
+                "ward": "Phường 3",
+                "district": "Quận Phú Nhuận"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHI002",
+                "name": "Áo sơ mi nam",
+                "size": "S",
+                "quantity": 1,
+                "unit_price": 250000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 11,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD006",
+        "customer": {
+            "customer_id": "CUS006",
+            "name": "Đặng Minh E",
+            "phone": "0956789012",
+            "address": {
+                "street": "23 Cách Mạng Tháng 8",
+                "ward": "Phường 10",
+                "district": "Quận 3"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "40",
+                "quantity": 2,
+                "unit_price": 600000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 5,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD007",
+        "customer": {
+            "customer_id": "CUS003",
+            "name": "Trần Thị B",
+            "phone": "0923456789",
+            "address": {
+                "street": "78 Nguyễn Kiệm",
+                "ward": "Phường 3",
+                "district": "Quận Phú Nhuận"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "39",
+                "quantity": 1,
+                "unit_price": 600000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 11,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD008",
+        "customer": {
+            "customer_id": "CUS003",
+            "name": "Trần Thị B",
+            "phone": "0923456789",
+            "address": {
+                "street": "78 Nguyễn Kiệm",
+                "ward": "Phường 3",
+                "district": "Quận Phú Nhuận"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "40",
+                "quantity": 1,
+                "unit_price": 550000
+            },
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "38",
+                "quantity": 1,
+                "unit_price": 550000
+            },
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "41",
+                "quantity": 2,
+                "unit_price": 600000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 16,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD009",
+        "customer": {
+            "customer_id": "CUS002",
+            "name": "Nguyễn Văn A",
+            "phone": "0912345678",
+            "address": {
+                "street": "45 Hồ Hảo Hớn",
+                "ward": "Phường Cô Giang",
+                "district": "Quận 1"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "M",
+                "quantity": 3,
+                "unit_price": 280000
+            },
+            {
+                "item_id": "SHI002",
+                "name": "Áo sơ mi nam",
+                "size": "S",
+                "quantity": 2,
+                "unit_price": 250000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 16,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD010",
+        "customer": {
+            "customer_id": "CUS006",
+            "name": "Đặng Minh E",
+            "phone": "0956789012",
+            "address": {
+                "street": "23 Cách Mạng Tháng 8",
+                "ward": "Phường 10",
+                "district": "Quận 3"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHI003",
+                "name": "Áo hoodie nữ",
+                "size": "M",
+                "quantity": 2,
+                "unit_price": 320000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 11,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD011",
+        "customer": {
+            "customer_id": "CUS005",
+            "name": "Phạm Thanh D",
+            "phone": "0945678901",
+            "address": {
+                "street": "101 Trần Hưng Đạo",
+                "ward": "Phường 6",
+                "district": "Quận 5"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "M",
+                "quantity": 3,
+                "unit_price": 280000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 15,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD012",
+        "customer": {
+            "customer_id": "CUS005",
+            "name": "Phạm Thanh D",
+            "phone": "0945678901",
+            "address": {
+                "street": "101 Trần Hưng Đạo",
+                "ward": "Phường 6",
+                "district": "Quận 5"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "40",
+                "quantity": 1,
+                "unit_price": 550000
+            },
+            {
+                "item_id": "SHI003",
+                "name": "Áo hoodie nữ",
+                "size": "S",
+                "quantity": 3,
+                "unit_price": 320000
+            },
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "40",
+                "quantity": 3,
+                "unit_price": 550000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 6,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD013",
+        "customer": {
+            "customer_id": "CUS002",
+            "name": "Nguyễn Văn A",
+            "phone": "0912345678",
+            "address": {
+                "street": "45 Hồ Hảo Hớn",
+                "ward": "Phường Cô Giang",
+                "district": "Quận 1"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN002",
+                "name": "Quần kaki nam",
+                "size": "30",
+                "quantity": 1,
+                "unit_price": 400000
+            },
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "S",
+                "quantity": 3,
+                "unit_price": 280000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 7,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD014",
+        "customer": {
+            "customer_id": "CUS004",
+            "name": "Lê Hoàng C",
+            "phone": "0934567890",
+            "address": {
+                "street": "56 Lý Thường Kiệt",
+                "ward": "Phường 7",
+                "district": "Quận Tân Bình"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "M",
+                "quantity": 1,
+                "unit_price": 280000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 2,
+            "year": 2024
+        },
+        "payment_method": "Chuyển khoản"
+    },
+    {
+        "order_id": "ORD015",
+        "customer": {
+            "customer_id": "CUS002",
+            "name": "Nguyễn Văn A",
+            "phone": "0912345678",
+            "address": {
+                "street": "45 Hồ Hảo Hớn",
+                "ward": "Phường Cô Giang",
+                "district": "Quận 1"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "41",
+                "quantity": 1,
+                "unit_price": 550000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 30,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD016",
+        "customer": {
+            "customer_id": "CUS003",
+            "name": "Trần Thị B",
+            "phone": "0923456789",
+            "address": {
+                "street": "78 Nguyễn Kiệm",
+                "ward": "Phường 3",
+                "district": "Quận Phú Nhuận"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "42",
+                "quantity": 3,
+                "unit_price": 550000
+            },
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "L",
+                "quantity": 3,
+                "unit_price": 280000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 17,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD017",
+        "customer": {
+            "customer_id": "CUS004",
+            "name": "Lê Hoàng C",
+            "phone": "0934567890",
+            "address": {
+                "street": "56 Lý Thường Kiệt",
+                "ward": "Phường 7",
+                "district": "Quận Tân Bình"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN002",
+                "name": "Quần kaki nam",
+                "size": "28",
+                "quantity": 1,
+                "unit_price": 400000
+            },
+            {
+                "item_id": "SHO002",
+                "name": "Giày tây nam",
+                "size": "39",
+                "quantity": 2,
+                "unit_price": 600000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 9,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD018",
+        "customer": {
+            "customer_id": "CUS003",
+            "name": "Trần Thị B",
+            "phone": "0923456789",
+            "address": {
+                "street": "78 Nguyễn Kiệm",
+                "ward": "Phường 3",
+                "district": "Quận Phú Nhuận"
+            }
+        },
+        "items": [
+            {
+                "item_id": "PAN004",
+                "name": "Quần jogger",
+                "size": "M",
+                "quantity": 1,
+                "unit_price": 280000
+            },
+            {
+                "item_id": "SHI002",
+                "name": "Áo sơ mi nam",
+                "size": "S",
+                "quantity": 3,
+                "unit_price": 250000
+            },
+            {
+                "item_id": "PAN002",
+                "name": "Quần kaki nam",
+                "size": "30",
+                "quantity": 1,
+                "unit_price": 400000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 15,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    },
+    {
+        "order_id": "ORD019",
+        "customer": {
+            "customer_id": "CUS002",
+            "name": "Nguyễn Văn A",
+            "phone": "0912345678",
+            "address": {
+                "street": "45 Hồ Hảo Hớn",
+                "ward": "Phường Cô Giang",
+                "district": "Quận 1"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHO001",
+                "name": "Giày sneaker",
+                "size": "41",
+                "quantity": 2,
+                "unit_price": 550000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 12,
+            "year": 2024
+        },
+        "payment_method": "Thẻ tín dụng"
+    },
+    {
+        "order_id": "ORD020",
+        "customer": {
+            "customer_id": "CUS006",
+            "name": "Đặng Minh E",
+            "phone": "0956789012",
+            "address": {
+                "street": "23 Cách Mạng Tháng 8",
+                "ward": "Phường 10",
+                "district": "Quận 3"
+            }
+        },
+        "items": [
+            {
+                "item_id": "SHI002",
+                "name": "Áo sơ mi nam",
+                "size": "M",
+                "quantity": 2,
+                "unit_price": 250000
+            }
+        ],
+        "order_date": {
+            "month": 3,
+            "day": 17,
+            "year": 2024
+        },
+        "payment_method": "Tiền mặt"
+    }
+]

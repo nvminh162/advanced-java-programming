@@ -1,0 +1,11 @@
+Test 1: Reading all classrooms from JSON
+Found 1 classrooms
+Classroom(name=Math, teacher=Mr. Smith, room=101, start_time=6:30 AM, end_time=9:00 AM, students=[Student(student_id=1, name=John, age=20, gpa=3.5, address=Address(street=123 Main St, city=Springfield, state=IL, zip=62701)), Student(student_id=2, name=Alice, age=21, gpa=3.8, address=Address(street=456 Elm St, city=Springfield, state=IL, zip=62702))])
+
+Test 2: Finding students in Math class
+Found 2 students in Math class:
+- John (ID: 1, GPA: 3.5)
+- Alice (ID: 2, GPA: 3.8)
+
+Test 3: Finding students in Physics class (non-existent)
+No students found in Physics class

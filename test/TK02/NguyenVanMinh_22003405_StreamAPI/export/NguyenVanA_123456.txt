@@ -1,0 +1,5 @@
+Danh sách diễn viên của phim movie_id = 11:
+Charles Chaplin
+Edna Purviance
+Eric Campbell
+Albert Austin

@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "username": "frieda.heller",
+        "password": "95nu1j1rjd3wx3",
+        "email": "frieda.heller@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            },
+            {
+                "group_id": 3,
+                "name": "Manager"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "username": "pasty.marks",
+        "password": "12091xz1",
+        "email": "pasty.marks@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            },
+            {
+                "group_id": 3,
+                "name": "Manager"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "username": "matt.waters",
+        "password": "07ahj2r7d78fb",
+        "email": "matt.waters@gmail.com",
+        "groups": [
+            {
+                "group_id": 2,
+                "name": "User"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "username": "larissa.kassulke",
+        "password": "1d0gv86bht5p",
+        "email": "larissa.kassulke@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            },
+            {
+                "group_id": 3,
+                "name": "Manager"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "username": "bryanna.becker",
+        "password": "90wj4kikwu",
+        "email": "bryanna.becker@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "username": "jeff.bogisich",
+        "password": "x93zj07c87wyd0",
+        "email": "jeff.bogisich@gmail.com",
+        "groups": [
+            {
+                "group_id": 2,
+                "name": "User"
+            },
+            {
+                "group_id": 3,
+                "name": "Manager"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "username": "napoleon.kunde",
+        "password": "lg19q2h42g",
+        "email": "napoleon.kunde@gmail.com",
+        "groups": [
+            {
+                "group_id": 2,
+                "name": "User"
+            },
+            {
+                "group_id": 3,
+                "name": "Manager"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "username": "scott.willms",
+        "password": "b2l12cpnd617o",
+        "email": "scott.willms@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "username": "damion.hoppe",
+        "password": "pb37om1ayrrxbx",
+        "email": "damion.hoppe@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "username": "mitch.mueller",
+        "password": "czfagr2ne0rp",
+        "email": "mitch.mueller@gmail.com",
+        "groups": [
+            {
+                "group_id": 1,
+                "name": "Admin"
+            },
+            {
+                "group_id": 2,
+                "name": "User"
+            }
+        ]
+    }
+]

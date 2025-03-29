@@ -1,0 +1,33 @@
+[
+  {
+    "movie_id": 11,
+    "plot": "Charlie is an immigrant who endures a challenging voyage and gets into trouble as soon as he arrives in America.",
+    "genres": [
+      "Short",
+      "Comedy",
+      "Drama"
+    ],
+    "runtime": 30,
+    "cast": [
+      "Charles Chaplin",
+      "Edna Purviance",
+      "Eric Campbell",
+      "Albert Austin"
+    ],
+    "num_mflix_comments": 0,
+    "title": "The Immigrant",
+    "languages": [
+      "English"
+    ],
+    "directors": [
+      "Charles Chaplin"
+    ],
+    "rated": "UNRATED",
+    "awards": {
+      "wins": 1,
+      "nominations": 0,
+      "text": "1 win."
+    },
+    "year": 1917
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Math",
+    "teacher": "Mr. Smith",
+    "room": 101,
+    "start_time": "6:30 AM",
+    "end_time": "9:00 AM",
+    "students": [
+      {
+        "student_id": 1,
+        "name": "John",
+        "age": 20,
+        "gpa": 3.5,
+        "address": {
+          "street": "123 Main St",
+          "city": "Springfield",
+          "state": "IL",
+          "zip": 62701
+        }
+      },
+      {
+        "student_id": 2,
+        "name": "Alice",
+        "age": 21,
+        "gpa": 3.8,
+        "address": {
+          "street": "456 Elm St",
+          "city": "Springfield",
+          "state": "IL",
+          "zip": 62702
+        }
+      }
+    ]
+  }
+]

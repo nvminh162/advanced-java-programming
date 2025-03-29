@@ -1,0 +1,8 @@
+
+Tạo project có tên gồm: Họ tên_MSSV. Số này. Thực hiện các yêu cầu sau:
+1. (2 điểm) Viết các lớp đối tượng với các thuộc tính tương ứng như dữ liệu json mẫu.
+2. (5 điểm) JSON-P (Jakarta JSON Processing):
+   Viết lớp, dùng The Object Model API để đọc tài liệu Json cho trước để phân tích.
+   Viết phương thức trả về danh sách sinh viên của một lớp học nào đó khi biết tên lớp.
+   + listStudents (name: String): List<Student>
+3. (3 điểm) Viết lớp, kiểm thử chức năng, ghi kết quả vào file, tên file gồm: tên và mã số sinh viên.
