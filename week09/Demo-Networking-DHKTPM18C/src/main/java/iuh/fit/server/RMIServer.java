@@ -12,10 +12,10 @@ import java.rmi.registry.LocateRegistry;
 public class RMIServer {
     public static void main(String[] args) throws Exception {
         Context context = new InitialContext();
-        LocateRegistry.createRegistry(7091);
+        LocateRegistry.createRegistry(3405);
 
         ICal obj = new CalImpl(); //Java remote object
-        context.bind("rmi://DESKTOP-CTKG7K9:7091/obj", obj);
+        context.bind("rmi://paul:3405/obj", obj);
 
         System.out.println("Server started");
     }

@@ -11,12 +11,12 @@ public class ParkingGarage {
 
     public synchronized void enter() throws Exception{
         while (availableSpace == 0){
-            System.out.println("Garage is being full! Please wait");
+            System.out.println("@== Garage is being full! Please wait");
             wait();
         }
 
         if(availableSpace > 0){
-            System.out.println("Car parked successfully!");
+            System.out.println("==> Car parked successfully!");
             availableSpace--;
             notifyAll();
         }
@@ -24,11 +24,11 @@ public class ParkingGarage {
 
     public synchronized void leave() throws Exception{
         while (availableSpace == capacity){
-            System.out.println("The garage is empty. Please wait!");
+            System.out.println("o== The garage is empty. Please wait!");
             wait();
         }
         if (availableSpace < capacity){
-            System.out.println("Car un-parked successfully!");
+            System.out.println("<== Car un-parked successfully!");
             availableSpace++;
             notifyAll();
         }

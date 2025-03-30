@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Server {
 
     public static void main(String[] args) throws IOException {
-        try (ServerSocket serverSocket = new ServerSocket(7091)) {
+        try (ServerSocket serverSocket = new ServerSocket(3405)) {
             System.out.println("Ready!!!");
 
             while (true) {

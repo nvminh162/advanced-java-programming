@@ -12,13 +12,11 @@ public class DemoThreadSync {
     private static Counter counter = new Counter();
 
     public static void main(String[] args) {
-
 //        ArrayList --> unthread safe
 //        Vector --> thread safe
 
 //        HashMap --> unthread safe
 //        Hashtable --> thread safe
-
 
         Runnable task = () -> {
             for (int i = 0; i < 1000; i++) {
@@ -35,11 +33,7 @@ public class DemoThreadSync {
 
         while(!pool.isTerminated()){}
 
-
-
         System.out.println("Counter: " + counter.getCount());
-
-
 
     }
 }

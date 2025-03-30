@@ -16,9 +16,8 @@ public class DemoParkingGarage {
         };
 
         Runnable leaveTask = () -> {
-
             try {
-                Thread.sleep(2000);
+                Thread.sleep(4000);
                 parkingGarage.leave();
             } catch (Exception e) {
                 throw new RuntimeException(e);

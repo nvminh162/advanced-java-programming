@@ -13,7 +13,7 @@ public class RMIClient {
     public static void main(String[] args) throws NamingException, RemoteException {
         Context context = new InitialContext();
 
-        ICal obj = (ICal) context.lookup("rmi://DESKTOP-CTKG7K9:7091/obj");
+        ICal obj = (ICal) context.lookup("rmi://paul:3405/obj");
 
         int total = obj.sum(10, 20);
         System.out.println("Total: " + total);

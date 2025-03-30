@@ -24,11 +24,10 @@ public class DemoCallable {
         thread3.start();
 
 
-        int total = f1.get(1000, TimeUnit.MICROSECONDS);
+        int total = f3.get(1000, TimeUnit.MICROSECONDS);
         System.out.println(total);
 
 //        int total = f1.get() + f2.get() + f3.get();
 //        System.out.println("Total: " + total);
-
     }
 }

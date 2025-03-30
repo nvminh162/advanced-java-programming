@@ -31,11 +31,7 @@ public class DemoThreadSync2 {
 
         while(!pool.isTerminated()){}
 
-
-
         System.out.println("Counter: " + counter.getCount());
-
-
 
     }
 }

@@ -10,7 +10,6 @@ public class DemoListSync {
     private static ArrayList<Integer> list = new ArrayList<>();
 //    private static Vector<Integer> list = new Vector<>();
 
-
     public static void main(String[] args) {
         Random rd = new Random();
         Runnable task = () -> {
