@@ -27,17 +27,15 @@ public class Server {
 
 class HandlingClient implements Runnable {
     private Socket socket;
-
     public HandlingClient(Socket socket) {
         this.socket = socket;
     }
 
     @Override
     public void run() {
-        try (
-                DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
-                DataInputStream dis = new DataInputStream(socket.getInputStream());
-                Scanner scanner = new Scanner(System.in);) {
+        try (DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+             DataInputStream dis = new DataInputStream(socket.getInputStream());
+             Scanner scanner = new Scanner(System.in)) {
             while (true) {
                 String message = dis.readUTF();
                 System.out.println("Received client: " + message);
