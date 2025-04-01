@@ -6,13 +6,13 @@
         <option name="dataSources">
           <list>
             <DataSourceV1>
-              <option name="uuid" value="c5e4d619-e89e-49d4-a6a1-51aacd7e1360" />
-              <option name="name" value="hospitalprj" />
+              <option name="uuid" value="e1301f5c-16ec-400f-b2d9-d984cf5f7f8f" />
+              <option name="name" value="minh22003405hospital" />
               <option name="dataSourceType" value="NEO4J_BOLT" />
               <option name="configuration">
                 <map>
                   <entry key="authType" value="User &amp; Password" />
-                  <entry key="database" value="hospitalprj" />
+                  <entry key="database" value="minh22003405hospital" />
                   <entry key="host" value="localhost" />
                   <entry key="password" value="sapassword" />
                   <entry key="port" value="7687" />

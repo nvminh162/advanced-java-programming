@@ -55,5 +55,4 @@ public class AppUtils {
                 "speciality", doctor.getSpeciality()
         );
     }
-
 }

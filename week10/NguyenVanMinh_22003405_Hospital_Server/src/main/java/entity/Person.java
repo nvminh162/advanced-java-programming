@@ -1,14 +1,14 @@
-package iuh.fit.entity;
+package entity;
 
 import lombok.*;
 
 import java.io.Serializable;
 
 @ToString
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@SetDter
 public class Person implements Serializable {
     protected String id;
     protected String name;
