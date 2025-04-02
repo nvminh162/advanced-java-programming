@@ -29,15 +29,6 @@ public class AppUtil {
         return getDiver().session(SessionConfig.forDatabase(DB_NAME));
     }
 
-    public static Map<String, Object> toMapDoctor(Doctor doctor) {
-        return Map.of(
-                "doctor_id", doctor.getId(),
-                "name", doctor.getName(),
-                "phone", doctor.getPhone(),
-                "speciality", doctor.getSpeciality()
-        );
-    }
-
     public static Doctor toDoctor(Node node) {
         return new Doctor(
                 node.get("doctor_id").asString(),

@@ -121,5 +121,28 @@ SET b.diagnosis = "abcd"
 MATCH (p:Patient {patient_id: "PT003"}), (d:Doctor {doctor_id: "DR.001"})
 CREATE (p)-[:BE_TREATED {startDate: date("2025-03-01")}]->(d);
 
+MATCH (p:Patient)-[b:BE_TREATED]->(d:Doctor)
+WHERE b.endDate IS NULL
+RETURN p, b, d
+
 MATCH (p:Patient {patient_id: "PT003"})-[b:BE_TREATED]->(d:Doctor {doctor_id: "DR.001"})
 RETURN p, b, d
+
+//CUD
+// Find Doctor
+MATCH (d:Doctor {doctor_id: "22003405"})
+RETURN d
+
+//Update Doctor
+MERGE (d:Doctor {doctor_id: "22003405"})
+SET d.name = "Nguyen Van Minh",
+    d.phone = "0353.999.798",
+    d.speciality = "SE Senior"
+
+//Delete
+MATCH (d:Doctor {doctor_id: "22002995"})
+DETACH DELETE d
+
+//Delete all
+MATCH (d:Doctor)
+DETACH DELETE d

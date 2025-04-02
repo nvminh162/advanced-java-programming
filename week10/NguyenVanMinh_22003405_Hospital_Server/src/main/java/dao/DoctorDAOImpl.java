@@ -3,6 +3,7 @@ package dao;
 import entity.Doctor;
 import org.neo4j.driver.Result;
 import org.neo4j.driver.summary.ResultSummary;
+import org.neo4j.driver.types.Node;
 import util.AppUtil;
 
 import java.util.List;
@@ -13,16 +14,90 @@ public class DoctorDAOImpl implements DoctorDAO {
     @Override
     public boolean addDoctor(Doctor doctor) {
         String query = """
-                CREATE (d:Doctor {doctor_id: $doctor_id})
+                CREATE (d:Doctor {doctor_id: $doctorID})
                 SET d.name = $name,
                     d.phone = $phone,
                     d.speciality = $speciality
                 RETURN d
                 """;
+        Map<String, Object> map = Map.of(
+                "doctorID", doctor.getId(),
+                "name", doctor.getName(),
+                "phone", doctor.getPhone(),
+                "speciality", doctor.getSpeciality()
+        );
         try (var session = AppUtil.getSession()) {
             return session.executeWrite(tx -> {
-                ResultSummary rs = tx.run(query, AppUtil.toMapDoctor(doctor)).consume();
+                ResultSummary rs = tx.run(query, map).consume();
                 return rs.counters().nodesCreated() > 0;
+            });
+        }
+    }
+
+    @Override
+    public Doctor findDoctorById(String doctorID) {
+        String query = """
+                MATCH (d:Doctor {doctor_id: $doctorID})
+                RETURN d
+                """;
+        Map<String, Object> map = Map.of("doctorID", doctorID);
+        try (var session = AppUtil.getSession()) {
+            return session.executeRead(tx -> {
+                Result result = tx.run(query, map);
+                if(!result.hasNext()) return null;
+                Node node = result.next().get("d").asNode();
+                return AppUtil.toDoctor(node);
+            });
+        }
+    }
+
+    @Override
+    public boolean updateDoctor(Doctor doctor) {
+        String query = """
+                MERGE (d:Doctor {doctor_id: $doctorID})
+                SET d.name = $name,
+                    d.phone = $phone,
+                    d.speciality = $speciality
+                """;
+        Map<String, Object> map = Map.of(
+                "doctorID", doctor.getId(),
+                "name", doctor.getName(),
+                "phone", doctor.getPhone(),
+                "speciality", doctor.getSpeciality()
+        );
+        try (var session = AppUtil.getSession()) {
+            return session.executeWrite(tx -> {
+                ResultSummary rs = tx.run(query, map).consume();
+                return rs.counters().propertiesSet() > 0;
+            });
+        }
+    }
+
+    @Override
+    public boolean deleteDoctorById(String doctorID) {
+        String query = """
+                MATCH (d:Doctor {doctor_id: $doctorID})
+                DETACH DELETE d
+                """;
+        Map<String, Object> map = Map.of("doctorID", doctorID);
+        try (var session = AppUtil.getSession()) {
+            return session.executeWrite(tx -> {
+                ResultSummary rs = tx.run(query, map).consume();
+                return rs.counters().nodesDeleted() > 0;
+            });
+        }
+    }
+
+    @Override
+    public int deleteAllDoctor() {
+        String query = """
+                MATCH (d:Doctor)
+                DETACH DELETE d
+                """;
+        try (var session = AppUtil.getSession()) {
+            return session.executeWrite(tx -> {
+                ResultSummary rs = tx.run(query).consume();
+                return rs.counters().nodesDeleted();
             });
         }
     }
@@ -74,14 +149,14 @@ public class DoctorDAOImpl implements DoctorDAO {
     @Override
     public boolean updateDiagnosis(String patientID, String doctorID, String newDiagnosis) {
         String query = """
-                MATCH (p:Patient {patient_id: $patientID)-[b:BE_TREATED]->(d:Doctor {doctor_id: $doctorID})
+                MATCH (p:Patient {patient_id: $patientID})-[b:BE_TREATED]->(d:Doctor {doctor_id: $doctorID})
                 WHERE b.endDate IS NULL
                 SET b.diagnosis = $newDiagnosis
                 """;
         Map<String, Object> map = Map.of(
-                "patient_id", patientID,
-                "doctor_id", doctorID,
-                "diagnosis", newDiagnosis
+                "patientID", patientID,
+                "doctorID", doctorID,
+                "newDiagnosis", newDiagnosis
         );
 
         try (var session = AppUtil.getSession()) {
