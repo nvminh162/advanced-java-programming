@@ -1,6 +1,7 @@
 package dao;
 
 import entity.Doctor;
+import entity.Patient;
 import org.neo4j.driver.Result;
 import org.neo4j.driver.summary.ResultSummary;
 import org.neo4j.driver.types.Node;

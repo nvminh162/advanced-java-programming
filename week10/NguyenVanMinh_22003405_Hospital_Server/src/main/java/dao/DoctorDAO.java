@@ -1,7 +1,9 @@
 package dao;
 
 import entity.Doctor;
+import entity.Patient;
 
+import javax.print.Doc;
 import java.util.List;
 import java.util.Map;
 

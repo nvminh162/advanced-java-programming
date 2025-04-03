@@ -134,10 +134,11 @@ MATCH (d:Doctor {doctor_id: "22003405"})
 RETURN d
 
 //Update Doctor
-MERGE (d:Doctor {doctor_id: "22003405"})
-SET d.name = "Nguyen Van Minh",
-    d.phone = "0353.999.798",
-    d.speciality = "SE Senior"
+MATCH (d:Doctor {doctor_id: '22003405'})
+SET d.name = 'Nguyen Van Minh',
+    d.phone = '0353 999 798',
+    d.speciality = 'SENIOR Java'
+RETURN d;
 
 //Delete
 MATCH (d:Doctor {doctor_id: "22002995"})
@@ -146,3 +147,32 @@ DETACH DELETE d
 //Delete all
 MATCH (d:Doctor)
 DETACH DELETE d
+
+//
+MATCH (p:Patient)-[b:BE_TREATED]->(d:Doctor)
+WHERE b.startDate >= date('YYYY-MM-01') AND b.startDate < date('YYYY-MM-01') + duration('P1M')
+RETURN p.name AS patient_name, d.name AS doctor_name, b.startDate AS treatment_start_date
+ORDER BY b.startDate;
+
+
+//
+MATCH (d:Doctor)
+RETURN d.doctor_id, d.name, d.speciality
+
+//
+MATCH (p:Patient)
+WHERE p.dateOfBirth >= date({year: 2000, month: 10, day: 1})
+AND p.dateOfBirth < date({year: 2000, month: 10, day: 1}) + duration('P1M')
+RETURN p
+ORDER BY p.dateOfBirth;
+
+//
+CREATE FULLTEXT INDEX txt_index_info
+FOR (d:Doctor)
+ON EACH [d.doctor_id, d.name];
+
+CALL db.index.fulltext.queryNodes("txt_index_info", "Kenneth")
+YIELD node, score
+RETURN node;
+
+SHOW INDEXES YIELD name, type WHERE type = "FULLTEXT";

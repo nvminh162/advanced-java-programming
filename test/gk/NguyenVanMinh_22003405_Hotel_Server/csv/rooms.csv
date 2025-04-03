@@ -1,0 +1,11 @@
+id,description,type,bedOptions,sleepsCount,smokingAllowed,price
+R101,Standard room with city view,Standard,Single,1,false,100
+R102,Deluxe room with ocean view,Deluxe,Double,2,true,150
+R103,Suite with balcony,Suite,King,4,false,200
+R104,Standard room with garden view,Standard,Single,1,false,90
+R106,Family room with extra space,Family,Queen,3,true,180
+R107,Deluxe room with mountain view,Deluxe,Double,2,false,160
+R109,Standard room with pool access,Standard,Single,1,true,110
+R111,Suite with private terrace,Suite,King,4,false,250
+R112,Family room with kids area,Family,Queen,3,true,190
+R185,Deluxe room with spa access,Deluxe,Double,2,false,170

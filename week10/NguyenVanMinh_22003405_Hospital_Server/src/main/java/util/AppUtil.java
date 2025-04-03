@@ -1,6 +1,7 @@
 package util;
 
 import entity.Doctor;
+import entity.Patient;
 import org.neo4j.driver.*;
 import org.neo4j.driver.types.Node;
 
@@ -35,6 +36,15 @@ public class AppUtil {
                 node.get("name").asString(),
                 node.get("phone").asString(),
                 node.get("speciality").asString()
+        );
+    }
+
+    public static Patient toPatient(Node node) {
+        return new Patient(
+//                node.get("doctor_id").asString(),
+//                node.get("name").asString(),
+//                node.get("phone").asString(),
+//                node.get("speciality").asString()
         );
     }
 }

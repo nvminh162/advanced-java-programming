@@ -27,6 +27,9 @@ public class Client {
                         6. Thống kê số bác sỹ theo từng chuyên khoa (speciality) của một khoa (department) nào đó khi biết tên khoa.
                         7. Dùng full-text search, tìm kiếm các bác sỹ theo chuyên khoa.
                         8. Cập nhật lại chẩn đoán (diagnosis) của một lượt điều trị khi biết mã số bác sỹ và mã số bệnh nhân.
+                        -----------------------------------------------------------------------------------------------------
+                        9.Dùng fulltext search để tìm kiếm bác sỹ theo tên, phone, chuyên khoa
+                        10.Hiển thị tất cả thông tin bác sĩ gồm: Mã, Tên
                         0. Thoát.
                         """;
                 System.out.println(menu);
