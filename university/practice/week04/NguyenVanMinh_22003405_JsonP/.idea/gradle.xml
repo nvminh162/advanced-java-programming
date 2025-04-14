@@ -7,7 +7,6 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="D:/library/gradle-8.12.1" />
-        <option name="gradleJvm" value="23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -15,6 +14,5 @@
         </option>
       </GradleProjectSettings>
     </option>
-    <option name="parallelModelFetch" value="true" />
   </component>
 </project>
