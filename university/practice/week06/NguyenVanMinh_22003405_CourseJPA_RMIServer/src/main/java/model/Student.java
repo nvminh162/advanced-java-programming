@@ -1,9 +1,11 @@
 package model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,7 +16,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @DiscriminatorValue("student")
-public class Student extends Person {
+public class Student extends Person implements Serializable {
+    @Column(name = "enrollment_date")
     private LocalDateTime enrollmentDate;
 
     public Student(String firstName, String lastName, LocalDateTime enrollmentDate) {
