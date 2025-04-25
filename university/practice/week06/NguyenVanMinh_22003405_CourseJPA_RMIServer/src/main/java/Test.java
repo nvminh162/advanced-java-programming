@@ -18,8 +18,4 @@ public class Test {
         em.persist(instructor);
         tr.commit();
     }
-    /*2.*/
-    /*public static void main(String[] args) {
-
-    }*/
 }

@@ -14,7 +14,6 @@ public class Test {
                 .createEntityManager();
 
         Student student = new Student();
-        student.setId(999);
         student.setFirstName("Minh");
         student.setLastName("Nguyen");
         student.setEnrollmentDate(LocalDateTime.of(2022, 1, 1, 0, 0, 0));
