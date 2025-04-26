@@ -14,16 +14,16 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 
 @Entity
-@DiscriminatorValue("instructor")
+@DiscriminatorValue("Instructor")
 public class Instructor extends Person implements Serializable {
-    @Column(name = "hire_date")
+    @Column(name = "HireDate")
     private LocalDateTime hireDate;
 
     @ManyToMany
     @JoinTable(
-            name = "course_instructor",
-            joinColumns = @JoinColumn(name = "person_id"),
-            inverseJoinColumns = @JoinColumn(name = "course_id")
+            name = "CourseInstructor",
+            joinColumns = @JoinColumn(name = "PersonID"),
+            inverseJoinColumns = @JoinColumn(name = "CourseID")
     )
     @ToString.Exclude
     private Set<Course> courses;

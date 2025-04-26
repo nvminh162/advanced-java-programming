@@ -16,8 +16,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 
 @Entity
-@DiscriminatorValue("student")
+@DiscriminatorValue("Student")
 public class Student extends Person implements Serializable {
-    @Column(name = "enrollment_date")
+    @Column(name = "EnrollmentDate")
     private LocalDateTime enrollmentDate;
 }

@@ -13,15 +13,14 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "office_assignment")
 public class OfficeAssignment implements Serializable {
     @Id
     @OneToOne
-    @JoinColumn(name = "instructor_id", unique = true)
+    @JoinColumn(name = "InstructorID", unique = true)
     private Instructor instructor;
 
-    @Column(columnDefinition = "nvarchar(50)")
+    @Column(name="Location", columnDefinition = "nvarchar(50)")
     private String location;
-    @Column(columnDefinition = "timestamp default CURRENT_TIMESTAMP")
+    @Column(name="Timestamp", columnDefinition = "timestamp default CURRENT_TIMESTAMP")
     private Timestamp timestamp;
 }

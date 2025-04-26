@@ -13,16 +13,21 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "department")
 public class Department implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "department_id")
+    @Column(name = "DepartmentID")
     private int id;
+
+    @Column(name="Administrator")
     private int administrator;
+
+    @Column(name="Budget")
     private double budget;
-    @Column(columnDefinition = "nvarchar(50)")
+
+    @Column(name="Name", columnDefinition = "nvarchar(50)")
     private String name;
-    @Column(name = "start_date")
+
+    @Column(name = "StartDate")
     private LocalDateTime startDate;
 }

@@ -14,18 +14,20 @@ import java.util.Set;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "course")
 public abstract class Course implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "course_id")
+    @Column(name = "CourseID")
     protected int id;
+
+    @Column(name = "Credits")
     protected int credits;
-    @Column(columnDefinition = "nvarchar(100)")
+
+    @Column(name = "Title", columnDefinition = "nvarchar(100)")
     protected String title;
 
     @ManyToOne
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "DepartmentID")
     private Department department;
 
     @ManyToMany(mappedBy = "courses")

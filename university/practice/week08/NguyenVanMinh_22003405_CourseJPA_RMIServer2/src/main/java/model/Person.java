@@ -13,15 +13,17 @@ import java.io.Serializable;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "discriminator")
-@Table(name = "person")
+@DiscriminatorColumn(name = "Discriminator")
+//@Table(name = "Person")
 public abstract class Person implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "person_id", nullable = false)
+    @Column(name = "PersonID", nullable = false)
     protected Integer id;
-    @Column(name = "first_name")
+
+    @Column(name = "FirstName")
     protected String firstName;
-    @Column(name = "last_name")
+
+    @Column(name = "LastName")
     protected String lastName;
 }

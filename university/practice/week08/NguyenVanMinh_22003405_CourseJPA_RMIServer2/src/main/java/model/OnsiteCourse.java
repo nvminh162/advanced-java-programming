@@ -7,6 +7,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Getter
 @Setter
@@ -15,11 +16,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "onsite_course")
 public class OnsiteCourse extends Course implements Serializable {
-    @Column(columnDefinition = "nvarchar(50)")
+    @Column(name = "Days", columnDefinition = "nvarchar(50)")
     private String days;
-    @Column(columnDefinition = "nvarchar(50)")
+
+    @Column(name="Location", columnDefinition = "nvarchar(50)")
     private String location;
-    private LocalDateTime time;
+
+    @Column(name="Time")
+    private LocalTime time;
 }

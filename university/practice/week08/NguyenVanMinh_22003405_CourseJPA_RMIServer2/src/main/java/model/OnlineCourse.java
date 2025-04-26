@@ -14,8 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "online_course")
 public class OnlineCourse extends Course implements Serializable {
-    @Column(columnDefinition = "nvarchar(100)")
+    @Column(name = "URL", columnDefinition = "nvarchar(100)")
     private String url;
 }

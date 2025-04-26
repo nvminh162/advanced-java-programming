@@ -13,14 +13,14 @@ public class Test {
                 .createEntityManagerFactory("mariadb_pu")
                 .createEntityManager();
 
-        Student student = new Student();
-        student.setFirstName("Minh");
-        student.setLastName("Nguyen");
-        student.setEnrollmentDate(LocalDateTime.of(2022, 1, 1, 0, 0, 0));
-
-        EntityTransaction tr = em.getTransaction();
-        tr.begin();
-        em.persist(student);
-        tr.commit();
+//        Student student = new Student();
+//        student.setFirstName("Minh");
+//        student.setLastName("Nguyen");
+//        student.setEnrollmentDate(LocalDateTime.of(2022, 1, 1, 0, 0, 0));
+//
+//        EntityTransaction tr = em.getTransaction();
+//        tr.begin();
+//        em.persist(student);
+//        tr.commit();
     }
 }

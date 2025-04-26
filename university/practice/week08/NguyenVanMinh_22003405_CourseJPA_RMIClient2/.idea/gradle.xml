@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
-      <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../NguyenVanMinh_22003405_CourseJPA_RMIClient2" />
-        <option name="gradleHome" value="D:/library/gradle-8.12.1" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/../NguyenVanMinh_22003405_CourseJPA_RMIClient2" />
-          </set>
-        </option>
-      </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />

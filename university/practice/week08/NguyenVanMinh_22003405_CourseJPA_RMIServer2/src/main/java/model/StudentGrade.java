@@ -12,18 +12,20 @@ import java.io.Serializable;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "student_grade")
 public class StudentGrade implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "enrollment_id")
+    @Column(name = "EnrollmentID")
     private int enrollmentID;
-    @Column(columnDefinition = "decimal(3, 2)")
+
+    @Column(name = "Grade", columnDefinition = "decimal(3, 2)")
     private double grade;
+
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "StudentID")
     private Student student;
+
     @ManyToOne
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "CourseID")
     private Course course;
 }
