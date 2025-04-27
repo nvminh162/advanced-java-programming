@@ -21,7 +21,14 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    implementation(files("libs/NguyenVanMinh_22003405_CourseJPA_RMIServer2-1.0-SNAPSHOT.jar"))
+    implementation('org.hibernate:hibernate-core:7.0.0.Beta1')
+    implementation('org.glassfish.jaxb:jaxb-runtime:4.0.5')
+
+    implementation("com.microsoft.sqlserver:mssql-jdbc:12.3.0.jre20-preview")
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.5.3")
+    compileOnly("org.projectlombok:lombok:1.18.38")
+    annotationProcessor("org.projectlombok:lombok:1.18.38")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
