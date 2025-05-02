@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "movies", indexes = {
@@ -14,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-@ToString(exclude = "shows")
+@ToString(exclude = {"shows", "actors"})
 @EqualsAndHashCode(of = "id")
 public class Movie implements Serializable {
     @Id
@@ -33,8 +35,13 @@ public class Movie implements Serializable {
     
     private int duration;
     
-    @Column(columnDefinition = "TEXT")
-    private String actors;
+    @ElementCollection
+    @CollectionTable(
+        name = "movie_actors", 
+        joinColumns = @JoinColumn(name = "movie_id")
+    )
+    @Column(name = "actor")
+    private Set<String> actors = new HashSet<>();
     
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private List<Show> shows = new ArrayList<>();
@@ -43,5 +50,10 @@ public class Movie implements Serializable {
     public void addShow(Show show) {
         shows.add(show);
         show.setMovie(this);
+    }
+    
+    // Helper method to add actor
+    public void addActor(String actor) {
+        actors.add(actor);
     }
 }

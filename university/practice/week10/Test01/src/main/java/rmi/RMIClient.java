@@ -11,6 +11,9 @@ import java.rmi.registry.Registry;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class RMIClient {
     // Using last 4 digits of MSSV as port number - replace with your actual MSSV
@@ -402,6 +405,7 @@ public class RMIClient {
         String director = getStringInput("Enter director: ");
         int duration = getIntInput("Enter duration in minutes (must be greater than 0): ");
         String actors = getStringInput("Enter actors (comma-separated): ");
+        Set<String> actorSet = new HashSet<>(Arrays.asList(actors.split(",\\s*")));
         
         Movie movie = new Movie();
         movie.setId(id);
@@ -410,7 +414,7 @@ public class RMIClient {
         movie.setReleaseYear(releaseYear);
         movie.setDirector(director);
         movie.setDuration(duration);
-        movie.setActors(actors);
+        movie.setActors(actorSet);
         
         Movie addedMovie = service.addMovie(movie);
         System.out.println("Movie added successfully: " + addedMovie.getTitle());
@@ -457,7 +461,8 @@ public class RMIClient {
         
         String actors = getStringInput("Enter new actors (comma-separated) (or press Enter to keep current): ");
         if (!actors.isEmpty()) {
-            movie.setActors(actors);
+            Set<String> actorSet = new HashSet<>(Arrays.asList(actors.split(",\\s*")));
+            movie.setActors(actorSet);
         }
         
         Movie updatedMovie = service.updateMovie(movie);

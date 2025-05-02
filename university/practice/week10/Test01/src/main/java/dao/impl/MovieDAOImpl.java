@@ -10,7 +10,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class MovieDAOImpl extends GenericDAOImpl<Movie, String> implements MovieDAO {
 
@@ -31,30 +30,33 @@ public class MovieDAOImpl extends GenericDAOImpl<Movie, String> implements Movie
 
     @Override
     public boolean validateMovieId(String id) {
-        // Movie ID must start with 'M' followed by at least 3 digits
-        return id != null && Pattern.matches("^M\\d{3,}$", id);
+        if (id == null) return false;
+        // ID phải bắt đầu bằng 'M' và theo sau bởi ít nhất 3 chữ số
+        Pattern pattern = Pattern.compile("^M\\d{3,}$");
+        return pattern.matcher(id).matches();
     }
 
     @Override
     public Map<Movie, Double> getTicketSalesByMovieSortedByTitle() {
         EntityManager em = JPAUtil.getEntityManager();
         try {
-            // This query gets the sum of ticket prices for each movie
+            // Lấy tất cả các bộ phim đã có vé được mua
             List<Object[]> results = em.createQuery(
                 "SELECT m, SUM(t.price) FROM Movie m " +
                 "JOIN m.shows s " +
                 "JOIN s.tickets t " +
                 "GROUP BY m " +
-                "ORDER BY m.title",
+                "ORDER BY m.title ASC",
                 Object[].class
             ).getResultList();
             
-            // Convert results to a map
-            Map<Movie, Double> salesByMovie = new LinkedHashMap<>();
+            // Chuyển kết quả sang Map
+            Map<Movie, Double> salesByMovie = new LinkedHashMap<>(); // LinkedHashMap giữ thứ tự chèn
+            
             for (Object[] result : results) {
                 Movie movie = (Movie) result[0];
-                Double totalSales = (Double) result[1];
-                salesByMovie.put(movie, totalSales);
+                Double sales = (Double) result[1];
+                salesByMovie.put(movie, sales);
             }
             
             return salesByMovie;

@@ -127,7 +127,10 @@ public class DataInitializer {
         movie1.setReleaseYear(2010);
         movie1.setDirector("Christopher Nolan");
         movie1.setDuration(148);
-        movie1.setActors("Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page");
+        // Add actors as separate entries
+        movie1.addActor("Leonardo DiCaprio");
+        movie1.addActor("Joseph Gordon-Levitt");
+        movie1.addActor("Ellen Page");
         movies.add(movie1);
         
         // Movie 2
@@ -138,7 +141,9 @@ public class DataInitializer {
         movie2.setReleaseYear(2008);
         movie2.setDirector("Christopher Nolan");
         movie2.setDuration(152);
-        movie2.setActors("Christian Bale, Heath Ledger, Aaron Eckhart");
+        movie2.addActor("Christian Bale");
+        movie2.addActor("Heath Ledger");
+        movie2.addActor("Aaron Eckhart");
         movies.add(movie2);
         
         // Movie 3
@@ -149,7 +154,9 @@ public class DataInitializer {
         movie3.setReleaseYear(1972);
         movie3.setDirector("Francis Ford Coppola");
         movie3.setDuration(175);
-        movie3.setActors("Marlon Brando, Al Pacino, James Caan");
+        movie3.addActor("Marlon Brando");
+        movie3.addActor("Al Pacino");
+        movie3.addActor("James Caan");
         movies.add(movie3);
         
         // Movie 4
@@ -160,7 +167,9 @@ public class DataInitializer {
         movie4.setReleaseYear(1994);
         movie4.setDirector("Quentin Tarantino");
         movie4.setDuration(154);
-        movie4.setActors("John Travolta, Uma Thurman, Samuel L. Jackson");
+        movie4.addActor("John Travolta");
+        movie4.addActor("Uma Thurman");
+        movie4.addActor("Samuel L. Jackson");
         movies.add(movie4);
         
         // Movie 5
@@ -171,7 +180,9 @@ public class DataInitializer {
         movie5.setReleaseYear(2014);
         movie5.setDirector("Christopher Nolan");
         movie5.setDuration(169);
-        movie5.setActors("Matthew McConaughey, Anne Hathaway, Jessica Chastain");
+        movie5.addActor("Matthew McConaughey");
+        movie5.addActor("Anne Hathaway");
+        movie5.addActor("Jessica Chastain");
         movies.add(movie5);
         
         return movies;
