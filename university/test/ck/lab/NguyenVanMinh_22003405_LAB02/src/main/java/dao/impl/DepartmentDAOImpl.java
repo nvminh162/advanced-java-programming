@@ -19,7 +19,6 @@ public class DepartmentDAOImpl extends GenericDAOImpl<Department, Integer> imple
         super(em, clazz);
     }
 
-    //Calculate the number of students in each department, the result is decreasing the number of students.
     @Override
     public Map<Department, Long> getNumberOfStudentsByDepartment() {
         String jpql = """
