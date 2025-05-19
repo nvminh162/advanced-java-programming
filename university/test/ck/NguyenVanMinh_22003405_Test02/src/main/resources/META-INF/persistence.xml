@@ -5,7 +5,10 @@
              version="3.2">
   <persistence-unit name="mariadb-pu">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+    <class>model.Answer</class>
+    <class>model.Category</class>
+    <class>model.Question</class>
+    <class>model.Quiz</class>
     <properties>
       <property name="jakarta.persistence.jdbc.driver"
                 value="org.mariadb.jdbc.Driver"/>
